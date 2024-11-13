@@ -1,0 +1,37 @@
+<meta charset="UTF-8" />
+<script>
+    /*
+    PROBLEMA: ARRAY EM ORDEM DECRESCENTE
+    Peça para um usuário inserir três números. Crie um array com os três números, colocando-os em ordem decrescente. Para ordenar, NÃO use o método reverse();
+    Retorne os elementos do array, separando-os por hífen (n1 - n2 - n3).
+    */
+
+    //ENTRADA
+    const nUm = Number(prompt(`Me diga um numero`));
+    const nDois = Number(prompt(`Me diga outro numero`));
+    const nTres = Number(prompt(`Me diga outro nmr`))
+
+    const crescente = [`${nUm}`,`${nTres}`, `${nDois}`];
+    const crescenteDois = [`${nDois}`,`${nTres}`,`${nUm}`];
+    const crescenteTres = [`${nDois}`,`${nUm}`,`${nTres}`];
+    const crescenteQuatro = [`${nUm}`,`${nDois}`,`${nTres}`];
+    const crescenteCinco = [`${nTres}`,`${nDois}`,`${nUm}`];
+    const crescenteSeis = [`${nTres}`,`${nUm}`,`${nDois}`];
+    //PROCESSAMENTO
+    if(nUm>nDois && nDois>nTres){
+        alert(`${crescenteQuatro.join(" - ")}`);
+    }else if(nUm>nTres && nTres>nDois){
+        alert(`${crescente.join(" - ")}`);
+    }else if(nDois>nTres && nTres>nUm){
+        alert(`${crescenteDois.join(" - ")}`);
+    }else if(nDois>nUm && nUm>nTres){
+        alert(`${crescenteTres.join(" - ")}`);
+    }else if(nTres>nDois && nDois>nUm){
+        alert(`${crescenteCinco.join(" - ")}`);
+    }else{
+        alert(`${crescenteSeis.join(" - ")}`);
+    }
+
+    //SAÍDA
+
+</script>
