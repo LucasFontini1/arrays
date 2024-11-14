@@ -1,0 +1,24 @@
+<script>
+    /*
+    Peça ao usuário para digitar uma frase que tenha pelo menos 3 palavras e no mínimo 25 letras.
+
+    O programa deve mostrar:
+        Cada palavra da frase separadamente.
+        A quantidade de letras de cada palavra.
+        O total de letras de toda a frase (desconsiderando espaços).
+
+    O programa também deve calcular e mostrar o número de combinações possíveis para formar novas palavras com as letras de cada palavra da frase.
+
+    Dica: O número de combinações possíveis de letras pode ser calculado com o fatorial do número de letras de cada palavra.    */
+
+    const palavra = prompt(`Digite 3 palvras \n no minimo 25 letra`);
+
+    let jun = [palavra];
+    let separacao = Number([palavra.indexOf(" ")]);
+    let separacao2 = Number([palavra.lastIndexOf(" ")]);
+    const primeiraPalavra = palavra.substring(0, separacao)
+    const segundaPalavra = palavra.substring(separacao, separacao2)
+    const terceiraPalavra = palavra.substring(separacao2, -1)
+    alert(segundaPalavra)
+    
+</script>
