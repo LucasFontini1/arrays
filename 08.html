@@ -12,8 +12,10 @@
     const palavra = prompt(`Digite uma palavra`);
     const letra = prompt(`Informe uma letra`);
     //PROCESSAMENTO
-    palavraDois = Array.from(palavra)
-    let posicao = palavraDois
+    let palavraDois = palavra.indexOf(letra);
+    if(palavraDois != -1){
+        document.write(`A letra esta na palavra ${palavra}<br> Esta na posição ${palavraDois}`)
+    }
 
     //SAÍDA
 
