@@ -1,26 +1,3 @@
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        h1{
-            text-align: center;
-            color: cadetblue;
-            font-family:sans-serif ;
-        }
-    </style>
-</head>
-<body>
-
-    <h1>
-        Tiggo, Sportage, Tucson, EcoSport
-    </h1>
-
-
-
     <script>
         /*
     PROBLEMA: REMOVER SUV
@@ -31,13 +8,34 @@
     */
 
     //ENTRADA
-
+    let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    let carrosCompleto = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    const remove = prompt(`Qual carro você deseja remover (Insira a primeira letra maiuscula) \n-${carrosCompleto.join( "\n-" )}`);
 
     //PROCESSAMENTO
-
+        const posicao = carrosSUV.indexOf(remove)
+        
+        if(posicao >= 0){
+            switch(posicao){
+            case 0:
+                carrosSUV.splice(0, 1);
+                alert(`lista antiga: ${carrosCompleto.join(' - ')} \n Lista nova: ${carrosSUV.join(' - ')}`);
+                break;
+                carrosSUV.splice(1, 1);
+                alert(`lista antiga: ${carrosCompleto.join(' - ')} \n Lista nova: ${carrosSUV.join(' - ')}`);
+                break;
+                carrosSUV.splice(2, 1);
+                alert(`lista antiga: ${carrosCompleto.join(' - ')} \n Lista nova: ${carrosSUV.join(' - ')}`);
+                break;
+                carrosSUV.splice(3, 1);
+                alert(`lista antiga: ${carrosCompleto.join(' - ')} \n Lista nova: ${carrosSUV.join(' - ')}`);
+                break;
+            }
+        }else{
+            alert('Coloque um valor valido')
+        }
 
     //SAÍDA
 
+
     </script>
-</body>
-</html>

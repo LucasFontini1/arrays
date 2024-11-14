@@ -1,0 +1,53 @@
+<meta charset="UTF-8" />
+<script>
+    /*
+    PROBLEMA: LOJA DE VEÍCULOS
+    Crie os seguintes arrays:
+    let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    let cassosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
+    let carrosHatch = ["308", "Focus", "i30"];
+    
+    Peça para o usuário informar mais três veículos para serem inseridos na lista. Para inserir na lista correta, peça também para o usuário identificar o tipo de veículo que deseja inserir, se é SUV, Sedan ou Hatch.
+
+    Apresente a lista final de cada tipo de veículo.
+    */
+
+    //ENTRADA
+    let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    let carrosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
+    let carrosHatch = ["308", "Focus", "i30"];
+    const insiraOcarro = prompt('Insira algum carro');
+    const insiraOtipo = prompt('Insira o Tipo (SUV | Sedan | Hatch)');
+    const insiraOcarroDois = prompt('Insira outro carro');
+    const insiraOtipoDois = prompt('Insira o Tipo (SUV | Sedan | Hatch)');
+    const insiraOcarroTres = prompt('Insira outro carro');
+    const insiraOtipoTres = prompt('Insira o Tipo (SUV | Sedan | Hatch)');
+    //PROCESSAMENTO
+    if(insiraOtipo === 'Sedan'){
+        carrosSedan = ["Civic", "Corolla", "Arizzo", "Fusion" `${insiraOcarro}`];
+    }else if(insiraOtipoDois === 'Sedan'){
+        carrosSedan = ["Civic", "Corolla", "Arizzo", "Fusion" `${insiraOcarroDois}`];
+    }else if(insiraOtipoTres === 'Sedan'){
+        carrosSedan = ["Civic", "Corolla", "Arizzo", "Fusion" `${insiraOcarroTres}`];
+    }if(insiraOtipo === 'SUV'){
+        carrosSUV = ["Civic", "Corolla", "Arizzo", "Fusion" `${insiraOcarro}`];
+    }else if(insiraOtipoDois === 'SUV'){
+        carrosSUV = ["Civic", "Corolla", "Arizzo", "Fusion" `${insiraOcarroDois}`];
+    }else if(insiraOtipoTres === 'SUV'){
+        carrosSUV = ["Civic", "Corolla", "Arizzo", "Fusion" `${insiraOcarroTres}`];
+    }if(insiraOtipo === 'Hatch'){
+        carrosHatch = ["Civic", "Corolla", "Arizzo", "Fusion" `${insiraOcarro}`];
+    }else if(insiraOtipoDois === 'Hatch'){
+        carrosHatch = ["Civic", "Corolla", "Arizzo", "Fusion" `${insiraOcarroDois}`];
+    }else if(insiraOtipoTres === 'Hatch'){
+        carrosHatch = ["Civic", "Corolla", "Arizzo", "Fusion" `${insiraOcarroTres}`];
+    }else{
+        alert(`Insira um valor valido`);
+    };
+
+    //SAÍDA
+    document.write(`Carros SUV: ${carrosSUV}<br>
+    Carros Sedan: ${carrosSedan}<br>
+    carros Hatch: ${carrosHatch}`);
+
+</script>
